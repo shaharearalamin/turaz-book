@@ -299,14 +299,21 @@ line-height: 120%; /* 76.8px */
       }
 
       .submenu li{
-        background: rgba(222, 222, 222, 0.5);
+        /* background: rgba(222, 222, 222, 0.5); */
         margin: 0px 0px 0px 20px;
+        font-size: 14px;
+      }
+      .submenu li:last-child{
+        /* background: rgba(222, 222, 222, 0.5); */
+        margin: 0px 0px 0px 20px;
+        font-size: 14px;
+        border-bottom: none !important;
       }
 
       .submenu {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease-in-out; /* Smooth transition */
+        transition: max-height 0.4s ease-in-out; /* Smooth transition */
       }
 
       .submenu.show {
@@ -314,7 +321,7 @@ line-height: 120%; /* 76.8px */
       }
       .show2{
         transform: rotate(180deg) ;
-        transition: max-height 0.3s ease-in-out; /* Smooth transition */
+        transition: max-height 0.4s ease-in-out; /* Smooth transition */
       }
 
       .offcanvasDropdown a {
@@ -327,6 +334,33 @@ line-height: 120%; /* 76.8px */
         align-items: center;
         align-content: center;
         justify-content:space-between ;
+      }
+      .offcanvasBtn button{
+        background-color: var(--primary-color) !important;
+        border-radius: 24px !important;
+        height: 40px !important;
+        &:hover{
+          color: white !important;
+        }
+      }
+      .offcanvasBtn button:nth-child(2) span{
+       width: 25px !important;
+       height: 25px;
+       border-radius: 50%;
+       background: white;
+       display: block;
+       display: inline-flex;
+       align-items: center;
+       align-content: center;
+       justify-content: center;
+       padding: 6px ;
+      }
+      .offcanvasBtn button:nth-child(2){
+        display: inline-flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        gap: 6px ;
       }
      
       @media screen and (max-width:1199px) {

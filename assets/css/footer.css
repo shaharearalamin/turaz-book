@@ -70,7 +70,7 @@ strong {
 #footer {
     width: 100%;
     height: auto;
-    background: #131414;
+    background: #0e0e0e;
 }
 #footerContentOne h2{
   color: white !important;
@@ -90,13 +90,14 @@ margin: 20px 0px !important;
 }
 
 #footerContainerWrapper{
-    width: 100%;
-    min-height: 50vh !important;
-    display: flex;
+    display: inline-flex !important;
+    flex-wrap: wrap;
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* border: 1px solid #ff0000; */
+    width: 100% !important;
+    overflow: hidden;
 }
 
 .FooterQuestion{
@@ -165,11 +166,11 @@ margin: 10px 0px !important;
 
 #footerContentOne{
     width: auto;
-    min-height: 200px;
+    min-height: 100% !important;
     padding: 30px;
  }
  #footerContentTwo{
-    width: 100%;
+  /* width: 100% !important; */
     min-height: 300px;
     padding: 30px ;
     display: flex;
@@ -192,6 +193,15 @@ margin: 10px 0px !important;
     margin: 0px !important;
     font-size: 20px !important;
     text-wrap: wrap !important;
+ }
+  #footerContentTwo{
+  width: 100% !important;
+    min-height: 300px;
+    /* padding: 30px ; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
  }
  }
 
